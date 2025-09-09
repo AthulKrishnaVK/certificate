@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLEAN GREEN BEAUTIFUL THALASSERY</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>CLEAN GREEN BEAUTIFUL THALASSERY</h1>
+    <p>Create and download your personalized certificate instantly</p>
+  </header>
+
+  <main>
+    <div class="form-box">
+      <h2>Enter Your Details</h2>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <div class="buttons">
+        <button class="generate-btn" onclick="generateCertificate()">Generate</button>
+        <button class="download-btn" onclick="downloadCertificate()">Download</button>
+      </div>
+    </div>
+
+    <div class="canvas-box">
+      <canvas id="certificateCanvas" width="1123" height="794"></canvas>
+    </div>
+  </main>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

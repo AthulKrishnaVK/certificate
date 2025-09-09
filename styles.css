@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+/* Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #2c5364, #203a43);
+  color: #f4f4f4;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  padding: 25px 10px;
+  background: linear-gradient(90deg, #3ad437, #f5d76e);
+  color: #222;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  width: 380px;
+  margin: 30px auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  border: 3px solid #131312;
+  color: #333;
+}
+.form-box h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+input {
+  width: 92%;
+  padding: 14px;
+  margin: 14px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212,175,55,0.6);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.generate-btn {
+  background: linear-gradient(135deg, #669b45, #b8860b);
+  color: white;
+}
+.generate-btn:hover {
+  background: linear-gradient(135deg, #f5d76e, #d4af37);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #2c5364, #0f2027);
+  color: white;
+}
+.download-btn:hover {
+  background: linear-gradient(135deg, #203a43, #2c5364);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Canvas */
+.canvas-box {
+  margin: 30px auto;
+  max-width: 95%;
+  overflow-x: auto;
+  padding: 10px;
+}
+canvas {
+  border: 5px solid #d4af37;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #eee;
+  font-size: 0.9rem;
+  padding: 14px;
+}
+footer b {
+  color: #d4af37;
+}
